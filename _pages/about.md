@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-## 👋 Hello, I'm Ming-Long Tsai
+## Hello, I'm Ming-Lung(Stanley) Tsai
 
 I am currently a junior majoring in **Computer Science & Infomation Engineering** at **National Taiwan University (NTU)**.
 
