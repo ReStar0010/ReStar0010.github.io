@@ -1,6 +1,6 @@
 ---
 title: "Portfolio 0"
-excerpt: "簡單的說明<br/><img src='/images/portfolio.webp'>"
+excerpt: "簡單的說明<br/><img src='/images/portfolio.webp' style='max-width: 500px; width: 100%; height: auto;'>"
 collection: portfolio
 ---
 
