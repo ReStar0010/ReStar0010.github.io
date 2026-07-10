@@ -1,23 +1,32 @@
-# Ignore the contents of the _site directory and other cache directories
-_site/
-.sass-cache/
-
-# Ignore the directory for local files during development
-local/
-
-# Ignore the Gemfile that is generated
+# Bundler cache
+.bundle
+vendor
 Gemfile.lock
 
-# Ignore files created by npm
+# Jekyll cache
+.jekyll-cache
+.jekyll-metadata
+_site
+
+# RubyGems
+*.gem
+
+# NPM dependencies
 node_modules
 package-lock.json
 
-# Ignore the vendor file at root level and bundle for alternative installation
-/vendor/
-.bundle/
+# IDE configurations
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
 
-# Ignore folders related to IDEs
-.vscode/
+# Misc
+_sass/vendors
+assets/js/dist
 
-# Ignore files created by MacOS
+# Hidden system files
+*~
 .DS_Store
+Thumbs.db
