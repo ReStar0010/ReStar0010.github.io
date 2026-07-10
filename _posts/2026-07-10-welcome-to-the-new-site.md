@@ -1,6 +1,6 @@
 ---
 title: A new home for the writing
-date: 2026-07-11 10:00:00 +0800
+date: 2026-07-10 09:00:00 +0800
 categories: [Meta]
 tags: [site]
 pin: true
