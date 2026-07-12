@@ -8,10 +8,10 @@ order: 1
 ## CouPro
 以校園為中心的在地化優惠雙邊平台(台大創創學程 CEP 第 18 屆)。
 
-## Confidential Computing / TrustZone 虛擬化
+## Confidential Computing / TrustZone Virtualization
 SSLab 研究:用 AVF 把 Arm TrustZone 虛擬化(與 Google pKVM 相關)。
 
-## 台大無家者服務社
+## NTU Homeless Service Club
 第 5、6 屆副社長:NGO 培力串聯、社團首刊、市集策展與行銷。
 
 <!--
