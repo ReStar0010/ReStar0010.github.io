@@ -43,6 +43,11 @@ order: 1
     <p class="zh"><a href="/projects/114-2-vm-assignment-1-writeup/">作業一 Writeup</a> · <a href="/projects/114-2-vm-assignment-2-writeup/">作業二 Writeup</a></p>
   </div>
   <div class="pf-item">
+    <h3>pKVM / SMMUv3 Device Passthrough</h3>
+    <p class="en">Extending host DMA isolation into protected guest assignment. <a href="/projects/nested-pkvm-smmu-device-passthrough/">Read the case study →</a></p>
+    <p class="zh">把 host DMA isolation 延伸到 protected guest device assignment。<a href="/projects/nested-pkvm-smmu-device-passthrough/">閱讀案例 →</a></p>
+  </div>
+  <div class="pf-item">
     <h3>NTU Homeless Service Club</h3>
     <p class="en">Vice president (5th &amp; 6th terms): NGO partnerships, the club's first journal, and curation &amp; outreach at local markets.</p>
     <p class="zh">第 5、6 屆副社長：NGO 培力串聯、社團首刊、市集策展與行銷。</p>
