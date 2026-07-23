@@ -1,16 +1,12 @@
 ---
-layout: page
+layout: post
 title: "Device Passthrough Investigation & Implementation on SMMU-Supported pKVM"
+date: 2026-07-24 09:00:00 +0800
 permalink: /projects/nested-pkvm-smmu-device-passthrough/
+categories: [案例研究]
+tags: [Project, pKVM, SMMUv3, AI Assisted]
 published: true
 ---
-
-```text
-unassigned stream -> host identity map (VMID 0)
-assigned stream   -> guest VMID + guest Stage-2
-```
-
-That was the change at the center of our Virtual Machines final project.
 
 We started from the `pkvm-smmu-v5` development branch. Its hypervisor-owned SMMUv3 driver protected the host from device DMA by keeping the real stream table under EL2 control. Our project asked a different question: could the same foundation route an assigned device through a protected guest's Stage-2?
 

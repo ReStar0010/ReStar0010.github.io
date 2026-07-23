@@ -38,9 +38,9 @@ order: 1
     <p class="zh">SSLab 研究：用 AVF 把 Arm TrustZone 虛擬化（與 Google pKVM 相關）。</p>
   </div>
   <div class="pf-item">
-    <h3>Virtual Machine Assignments</h3>
-    <p class="en"><a href="/projects/114-2-vm-assignment-1-writeup/">Assignment 1 Writeup</a> · <a href="/projects/114-2-vm-assignment-2-writeup/">Assignment 2 Writeup</a></p>
-    <p class="zh"><a href="/projects/114-2-vm-assignment-1-writeup/">作業一 Writeup</a> · <a href="/projects/114-2-vm-assignment-2-writeup/">作業二 Writeup</a></p>
+    <h3>Virtual Machine</h3>
+    <p class="en"><a href="/projects/114-2-vm-assignment-1-writeup/">Let a guest control host vCPU affinity</a> · <a href="/projects/114-2-vm-assignment-2-writeup/">Boot a Realm VM with early console output</a></p>
+    <p class="zh"><a href="/projects/114-2-vm-assignment-1-writeup/">讓 guest 控制 host vCPU affinity</a> · <a href="/projects/114-2-vm-assignment-2-writeup/">啟動 Realm VM 並輸出 early console</a></p>
   </div>
   <div class="pf-item">
     <h3>pKVM / SMMUv3 Device Passthrough</h3>

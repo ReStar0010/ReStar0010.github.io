@@ -1,7 +1,10 @@
 ---
-layout: page
+layout: post
 title: "114-2 Virtual Machine Assignment 2 Writeup"
+date: 2026-07-23 10:00:00 +0800
 permalink: /projects/114-2-vm-assignment-2-writeup/
+categories: [作業紀錄]
+tags: [Project, Virtual Machines, AI Assisted]
 published: true
 ---
 
