@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Device Passthrough Investigation & Implementation on SMMU-Supported pKVM"
-date: 2026-07-24 09:00:00 +0800
+date: 2026-07-24 00:01:00 +0800
 permalink: /projects/nested-pkvm-smmu-device-passthrough/
 categories: [案例研究]
 tags: [Project, pKVM, SMMUv3, AI Assisted]
