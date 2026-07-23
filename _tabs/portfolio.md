@@ -38,6 +38,11 @@ order: 1
     <p class="zh">SSLab 研究：用 AVF 把 Arm TrustZone 虛擬化（與 Google pKVM 相關）。</p>
   </div>
   <div class="pf-item">
+    <h3>Virtual Machine Assignments</h3>
+    <p class="en"><a href="/projects/114-2-vm-assignment-1-writeup/">Assignment 1 Writeup</a> · <a href="/projects/114-2-vm-assignment-2-writeup/">Assignment 2 Writeup</a></p>
+    <p class="zh"><a href="/projects/114-2-vm-assignment-1-writeup/">作業一 Writeup</a> · <a href="/projects/114-2-vm-assignment-2-writeup/">作業二 Writeup</a></p>
+  </div>
+  <div class="pf-item">
     <h3>NTU Homeless Service Club</h3>
     <p class="en">Vice president (5th &amp; 6th terms): NGO partnerships, the club's first journal, and curation &amp; outreach at local markets.</p>
     <p class="zh">第 5、6 屆副社長：NGO 培力串聯、社團首刊、市集策展與行銷。</p>
