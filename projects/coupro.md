@@ -1,0 +1,178 @@
+---
+layout: page
+title: "CouPro: Building a Campus Marketplace in Contact with Reality"
+permalink: /projects/coupro/
+published: true
+---
+
+```text
+Experiment 1 · three weeks · 151 users · 123 physical redemptions
+Experiment 2 · one week    · +88 users · +113 physical redemptions
+```
+
+These were the numbers we brought into our June 2026 CouPro pitch. More important than their size was where they came from: people walking into physical stores, redeeming an offer, and leaving an event that the merchant could reconcile.
+
+CouPro began as a campus coupon platform. Building it taught me how to connect a web product to real transactions. Putting it into the field taught me something harder: software can make an idea executable, but it cannot make the underlying user behavior true.
+
+I delivered one of our live pitches alone. I opened by joking that the audience was probably wondering why the technical person was on stage and where the teammates who could speak had gone. It was an accident of scheduling, but it fit the project. By then, being the CTO no longer meant staying behind the product. I had to explain the market, defend our assumptions, and listen while the panel challenged the category we had chosen.
+
+## The product we first set out to build
+
+Local stores already use discounts, membership systems, and messaging channels. Most of those tools become useful after a customer has entered the store or joined its membership program. We wanted to explore the step before that: helping a small merchant reach someone who had not planned to visit.
+
+Our first product thesis was a two-sided coupon network:
+
+```text
+merchant publishes an offer
+-> student discovers or receives it
+-> student claims or shares it
+-> someone redeems it in the store
+-> merchant sees the attributed event
+```
+
+The Web MVP used Next.js on the frontend and Django on the backend. It supported coupon discovery, QR claims, transfers, in-store redemption, merchant administration, and basic analytics. A coupon was not only content on a page; claims, transfers, redemption sessions, recipients, and merchant outcomes were stored as events that we could test and inspect.
+
+That distinction mattered. If CouPro was going to promise customer acquisition rather than another coupon directory, we needed to know not only that a coupon existed, but how it moved and where it ended.
+
+## A two-sided market is two behavior problems
+
+The merchant-side problem was understandable. Small stores spend money on discounts and promotion but often cannot tell whether an offer attracted a new customer or merely reduced the margin on someone who would have visited anyway.
+
+Our pricing tried to align with that concern. We did not lead with a monthly software fee. The proposal was to charge only when a platform-attributed redemption occurred. That made attribution part of the business model rather than an optional analytics feature.
+
+The student-side assumption was less stable. We initially believed that nearby discounts, coupon sharing, and the ability to give an unused offer to a friend could create a natural usage loop.
+
+That sounds plausible in a pitch. In practice, it depends on several behaviors all being true:
+
+- the discount must be large enough to influence where someone goes;
+- the offer must arrive at the right time and place;
+- sharing must be easier or more rewarding than sending a normal message;
+- enough stores and students must participate at the same time.
+
+The product could implement each feature. It could not assume those behaviors into existence.
+
+## Taking the loop into physical stores
+
+We used campus and the surrounding commercial district as a small market where the complete loop could be observed.
+
+The first experiment centered on coupon exchange and an interdepartmental activity. According to our June pitch, it recorded 151 registered users and 123 physical redemptions over three weeks.
+
+For the second experiment, we added stronger game and reward mechanics around CouPoint and CouSino. The pitch recorded another 88 users and 113 redemptions in one week. Together, the two activities reached 239 registered users and 236 physical redemptions.
+
+The same deck associated more than NT$16,000 in merchant revenue with CouPro redemptions and reported an 8% one-week increase for one store. These are useful operating signals, but they have a boundary: POS reconciliation can show that a CouPro-linked purchase occurred; without a counterfactual, it cannot prove that every purchase was incremental.
+
+That measurement distinction became part of the product lesson. An attribution system is valuable precisely because "a transaction happened" and "our product caused a new transaction" are different claims.
+
+### The merchant asked who sent the customer
+
+One merchant story made the attribution idea concrete.
+
+The owner of Ding Ding had written a buy-one-get-one offer on a blackboard outside the store. Students often walked past it or noticed only after they had already eaten. CouPro did not make the discount deeper; it made the offer claimable and transferable.
+
+During the experiment, a student from National Chengchi University came to redeem a coupon that a friend had passed along. The owner's next question was not about page views. He wanted to know who had sent that customer and whether he could reward that person directly.
+
+We could not yet answer that question with a finished KOC engine. But the question itself mattered. It connected three things that had previously existed as separate product features:
+
+```text
+coupon transfer
+-> physical redemption
+-> merchant asks to reinvest in the referrer
+```
+
+That was the first time the proposed referral graph sounded less like pitch language and more like a merchant request.
+
+## What contact with the market changed
+
+### Small discounts did not reliably change destination
+
+Students had existing routines and a small set of stores they already visited. A modest discount often was not enough to make someone cross the street, change a meal plan, or try an unfamiliar store.
+
+This challenged the original consumer thesis. "People like saving money" was true but too weak. Liking a benefit is not the same as changing behavior for it.
+
+### Merchants wanted an outcome, not another dashboard
+
+Store owners did not want to learn a complicated campaign panel, operate an A/B testing system, or continuously tune coupon parameters. They wanted to state a business condition and see a result.
+
+During the experiments, much of that translation still happened through us. We talked with the merchant, interpreted the situation, designed the offer, and helped operate the campaign.
+
+The manual work was not incidental. It exposed the actual product gap.
+
+### Founder effort could hide the scalability problem
+
+We could make an activity work by visiting stores, explaining the mechanism, resolving edge cases, and adjusting the campaign by hand. That proved we could operate the loop. It did not yet prove that the loop could reproduce itself.
+
+The more useful question became:
+
+> Which decisions were merchants and users unable or unwilling to make, and which of those decisions should the product automate?
+
+## The panel challenged the category, not the demo
+
+The live Q&A added an external layer of criticism that our internal documents did not have.
+
+One evaluator, drawing on decades of CRM experience, argued that customers attracted primarily by price tend to have weak loyalty. From that perspective, the risk was not that our coupon mechanism was poorly implemented; it was that we had selected a segment whose behavior worked against durable retention.
+
+Other panelists questioned whether a local commercial-district playbook could scale. Every district has a different customer profile, merchant network, and operating rhythm. Expansion would require repeated sales and field work, while LINE or another existing platform could copy the visible features with a much larger installed base.
+
+A third line of criticism went deeper: if the platform only moved the cost of a discount from one party to another, it had not created a new profit pool. We still had to identify the additional value someone would pay for — attribution, demand generation, coordination, or something beyond the coupon itself.
+
+The panel also recognized the team's willingness to go store by store and put the product in contact with reality. Both judgments could be true. We had shown grassroots execution, but we had not yet shown that the category produced a scalable business.
+
+## My role: engineering the loop, then questioning it
+
+I worked on CouPro as CTO and product lead. My implementation work covered the paths that made a physical coupon transaction observable: QR claims, redemption sessions, fixed and table QR flows, coupon sharing, merchant analytics, administration, storage, and consistency testing.
+
+I also worked on the reliability boundary around those flows. A shared coupon should not be claimed twice by different recipients. A replayed request should not create a second redemption. Merchant analytics should be based on the same events that changed coupon state. Load tests and data-integrity checks mattered because the business claim depended on the transaction record being trustworthy.
+
+But my role gradually moved beyond implementing a specification. I participated in shaping the experiments, deciding what evidence we needed, assembling the market and pitch material, and reading field failures as product information.
+
+The largest change in my development mindset was learning to separate three questions:
+
+```text
+Can we build it?
+Will someone use it in the intended situation?
+Does that behavior create a viable market?
+```
+
+AI made the first question much cheaper to answer. CouPro made the other two impossible to ignore.
+
+## What AI changed — and what it did not
+
+AI-assisted development let us prototype flows, revise interfaces, run analyses, and prepare experiments faster than a student team could have done before. That changed the economics of trying an idea.
+
+It did not remove the need to choose the right problem. Faster implementation can even make the build-first instinct more dangerous: a polished prototype creates the feeling of progress before the user or market assumptions have been tested.
+
+One panelist described storytelling, creativity, and judgment as three capabilities that become more important in the AI era. His feedback was that the presentation and creativity were not the main weakness; the harder question was our judgment in choosing the market. That criticism stayed with me because it named the part AI could not do on our behalf.
+
+The ordering I now prefer is:
+
+```text
+observe a costly behavior or decision
+-> write down the assumption
+-> design the smallest falsifying experiment
+-> build only what the experiment requires
+-> use the result to decide what deserves automation
+```
+
+Our latest pitch explores an AI-native direction in which a merchant states a goal, a user states an intent, and agents negotiate the offer. That is future work, not a shipped result. Its value is that it comes from a field observation: both sides wanted an outcome, while much of the coordination work remained manual.
+
+## What CouPro produced
+
+CouPro produced more than a pitch and less than a proven marketplace.
+
+We built a working two-sided Web MVP and ran the complete merchant-to-student-to-redemption loop in physical stores. We conducted two campus experiments instead of relying only on interview intent. We created an event model for claims, transfers, and redemptions, then used the field results to challenge our own consumer thesis.
+
+The unresolved parts are equally important:
+
+- repeat usage and merchant counts changed across pitch versions and still need cohort-level reconciliation;
+- redemption-linked revenue did not yet establish causal incrementality;
+- the automated social graph and KOC analysis were product hypotheses, not completed engines;
+- merchant campaign design still depended heavily on founder intervention;
+- the agent-to-agent marketplace remains a proposed next experiment.
+
+That is the honest boundary of the project. CouPro showed that we could build and operate a real transaction loop. It also changed what I think development is for: not defending the first idea with more features, but making the next important uncertainty cheap enough to test.
+
+---
+
+**Role:** CTO · Product
+
+**Context:** NTU Creativity and Entrepreneurship Program, 18th Cohort

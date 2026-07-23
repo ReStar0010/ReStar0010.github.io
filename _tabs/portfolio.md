@@ -29,8 +29,8 @@ order: 1
   </div>
   <div class="pf-item">
     <h3>CouPro</h3>
-    <p class="en">A localized, two-sided deals platform centered on campus life (NTU CEP, 18th cohort).</p>
-    <p class="zh">以校園為中心的在地化優惠雙邊平台（台大創創學程 CEP 第 18 屆）。</p>
+    <p class="en">A localized, two-sided deals platform centered on campus life (NTU CEP, 18th cohort). <a href="/projects/coupro/">Read the case study →</a></p>
+    <p class="zh">以校園為中心的在地化優惠雙邊平台（台大創創學程 CEP 第 18 屆）。<a href="/projects/coupro/">閱讀案例 →</a></p>
   </div>
   <div class="pf-item">
     <h3>Confidential Computing / TrustZone Virtualization</h3>
