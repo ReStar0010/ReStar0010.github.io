@@ -69,6 +69,11 @@ title: 作品集
     <p class="zh">我設計整體架構，也參與實際測試與回饋迭代。專案未正式上線，目前持續運作的是批次故事與 TTS pipeline。<a href="/projects/adventure-cube/">閱讀專案紀錄 →</a></p>
   </div>
   <div class="pf-item">
+    <h3><span class="en">Legacy WordPress Operations</span><span class="zh">老 WordPress 行政流程自動化</span></h3>
+    <p class="en">A de-identified public-sector part-time workflow that turns REST, browser, and FTP operations into repeatable runbooks with round-trip verification. <a href="/projects/legacy-wordpress-ai-operations/">Read the project record →</a></p>
+    <p class="zh">一份去識別化的公部門小打工：我用 AI 拆開 REST、瀏覽器與 FTP 的操作邊界，再把一次性的摸索整理成可重跑、可驗證的流程。<a href="/projects/legacy-wordpress-ai-operations/">閱讀專案紀錄 →</a></p>
+  </div>
+  <div class="pf-item">
     <h3><span class="en">Confidential Computing / TrustZone Virtualization</span><span class="zh">機密運算／TrustZone 虛擬化</span></h3>
     <p class="en">Research at SSLab: virtualizing Arm TrustZone with AVF (related to Google pKVM).</p>
     <p class="zh">SSLab 研究：用 AVF 把 Arm TrustZone 虛擬化（與 Google pKVM 相關）。</p>
