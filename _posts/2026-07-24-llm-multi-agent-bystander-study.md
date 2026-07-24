@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "When More LLM Agents Did Not Diffuse Responsibility"
+description: "We designed a panel experiment to ask whether LLM agents go quiet in larger groups. The run hit an intervention ceiling, leaving a narrow null result and a clearer next experiment."
 date: 2026-07-24 01:00:00 +0800
 permalink: /projects/llm-multi-agent-bystander-study/
 categories: [研究紀錄]
@@ -94,12 +95,19 @@ in the conversation and defends the proposal, a less explicit review setting,
 or a broader set of models could create enough variation to test whether
 responsibility ever diffuses.
 
-This page records the team's research artifact. The source material identifies
-a three-person team but does not yet map research, implementation, analysis,
-and writing to individual members. I am therefore not assigning sole or
-individual ownership here. That attribution remains to be added.
+My contribution included designing the experiment structure: turning the
+bystander-effect question into controlled panel conditions with different
+group sizes. This was still a three-person course project; I am not assigning
+the entire implementation, analysis, or writing to myself.
+
+The original [course project report is available here](/files/llm-multi-agent-bystander-study-project-report.md).
+It is a snapshot of the submitted work, including the team's original
+interpretation. This page uses narrower language where the completed runs do
+not support the report's broader claims. Persona files and raw `[THINK]` traces
+are not included.
 
 ---
 
 **Context:** Advanced Information Technologies II, National Taiwan University<br>
-**Status:** Completed course research artifact; individual contribution split pending
+**My contribution:** Experimental structure and research design<br>
+**Status:** Completed three-person course research artifact

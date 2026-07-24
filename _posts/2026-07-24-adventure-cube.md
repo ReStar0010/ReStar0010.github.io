@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Adventure Cube: From a Live Story App to a Batch Story and TTS Pipeline"
+description: "We used hands-on testing and feedback to revise a children's story prototype. The repository now centers on a batch story-and-narration pipeline."
 date: 2026-07-24 01:04:00 +0800
 permalink: /projects/adventure-cube/
 categories: [專案紀錄]
@@ -64,6 +65,11 @@ work to me:
 - generated-story uploads;
 - the bilingual onboarding and handover document.
 
+Beyond those file-level commits, I designed the overall system architecture.
+I also took part in hands-on testing and used the feedback with the team to
+revise the product. That testing informed the product direction, but it was
+not a public launch or evidence of sustained external adoption.
+
 Other team members implemented substantial parts of the Expo interface,
 Django backend, authentication, generation pipeline, filtering, and content.
 This is not a sole-authorship project.
@@ -86,5 +92,5 @@ without the dormant Django runtime.
 ---
 
 **Context:** Team generative-story prototype<br>
-**My evidenced work:** story UI, prompt/context material, TTS experimentation, audio integration, and handover<br>
+**My contribution:** Overall architecture, testing and feedback iteration, story UI, prompt/context material, TTS experimentation, audio integration, and handover<br>
 **Status:** Batch pipeline active; live runtime dormant; repository withheld pending security cleanup

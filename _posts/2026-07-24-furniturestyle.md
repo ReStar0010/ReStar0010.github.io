@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "FurnitureStyle: Turning an Image into a Searchable Furniture Description"
+description: "Instead of asking one prompt to recognize furniture and rewrite its color at once, this prototype split the job into two inspectable steps before searching."
 date: 2026-07-24 01:02:00 +0800
 permalink: /projects/furniturestyle/
 categories: [專案紀錄]
@@ -44,6 +45,15 @@ The repository contains Django models, views, serializers, templates, and a
 shopping-search integration. User profiles stored room, color, and style
 preferences. A favorites path let users save and remove items.
 
+![FurnitureStyle 的初步系統架構與搜尋流程](/assets/img/furniturestyle/system-flow.webp)
+_期末資料中的初步流程圖。前端原始碼可對上 Vue 登入、搜尋、結果、收藏與歷史紀錄；OpenAI、購物搜尋、MySQL 與部署關係仍需後端材料才能完整驗證。_
+
+The supplied Vue 3 front end makes the user path concrete. A user could sign
+in with a username or Google account, submit either text or an image, choose an
+original, analogous, or complementary color mode, then move to a result page.
+The result cards linked to products and supported favorites; the account view
+also exposed search history.
+
 The commit history attributes four changes to me:
 
 - the initial project import;
@@ -51,9 +61,14 @@ The commit history attributes four changes to me:
 - favorites and user-profile functionality;
 - the two-stage classifier and color-mode handling.
 
-A collaborator's commits cover authentication changes and favorite-item
-removal. The repository is private, so this article does not link or reproduce
-its source.
+A teammate's front-end history covers authentication, the search and result
+interfaces, favorites, and responsive fixes. The repository is private, so
+this article does not link or reproduce its source.
+
+The retained final-project archive contains a report, slides, a demo, and the
+system-flow diagram above. A separately supplied RAR contains the front-end
+source and a built `dist` directory. Its companion backend ZIP is empty, so it
+does not add evidence for the Django internals, deployment, or testing.
 
 ## What this record does not claim
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What Is the Time Value of Showing Users Where YouBike Rebalancing Happens?"
+description: "A 76-station simulation asks a narrow question: if bikes are already being rebalanced, how much time can users save simply by seeing where?"
 date: 2026-07-24 01:01:00 +0800
 permalink: /projects/youbike-dispatch-information-simulation/
 categories: [研究紀錄]
@@ -87,11 +88,13 @@ exists where the dynamic data suggests, and if users respond according to the
 modeled detour rule, location information has measurable value without adding
 bikes.
 
-The repository and report establish a team result, but the current artifacts
-do not isolate my subsystem or writing contribution. Individual attribution
-is still pending.
+I proposed this topic and worked in a PM-like role, helping the team turn the
+initial question into a tractable comparison. I also participated in the
+formalization of the research question and simulation comparison. The
+reported numbers remain team results rather than my individual result.
 
 ---
 
 **Context:** Computer Networks Laboratory, National Taiwan University<br>
-**Status:** Completed team simulation; individual contribution split pending
+**My contribution:** Topic proposal, PM-like coordination, and formalization<br>
+**Status:** Completed team simulation

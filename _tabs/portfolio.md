@@ -1,6 +1,7 @@
 ---
 icon: fas fa-diagram-project
 order: 1
+title: 作品集
 ---
 
 <style>
@@ -20,12 +21,12 @@ order: 1
 </style>
 
 <div class="pf">
-  <input type="radio" name="pflang" id="pf-en" class="pf-r" checked>
-  <input type="radio" name="pflang" id="pf-zh" class="pf-r">
-  <div class="pf-toggle"><label for="pf-en">EN</label><label for="pf-zh">中文</label></div>
+  <input type="radio" name="pflang" id="pf-en" class="pf-r">
+  <input type="radio" name="pflang" id="pf-zh" class="pf-r" checked>
+  <div class="pf-toggle"><label for="pf-zh">中文</label><label for="pf-en">EN</label></div>
   <div class="pf-item">
     <p class="en">Selected projects, course research, and work in progress. Each record states what the current evidence can support.</p>
-    <p class="zh">這裡整理已完成、仍在進行，以及課程中的專案；每一筆都只寫目前證據能支持的內容。</p>
+    <p class="zh">這裡收錄已完成、正在進行，以及課堂上的專案。每一筆只寫目前有證據支持的內容。</p>
   </div>
   <div class="pf-item">
     <h3>CouPro</h3>
@@ -33,57 +34,57 @@ order: 1
     <p class="zh">以校園為中心的在地化優惠雙邊平台（台大創創學程 CEP 第 18 屆）。<a href="/projects/coupro/">閱讀案例 →</a></p>
   </div>
   <div class="pf-item">
-    <h3>LLM Multi-Agent Bystander Study</h3>
+    <h3><span class="en">LLM Multi-Agent Bystander Study</span><span class="zh">LLM 多代理人旁觀者效應研究</span></h3>
     <p class="en">A pre-registered panel experiment that retained a ceiling-limited null result and its corrupted-run boundary. <a href="/projects/llm-multi-agent-bystander-study/">Read the research record →</a></p>
-    <p class="zh">預先註冊的多代理人 panel 實驗；保留 ceiling-limited null result 與 corrupted runs 的分析邊界。<a href="/projects/llm-multi-agent-bystander-study/">閱讀研究紀錄 →</a></p>
+    <p class="zh">我參與設計多代理人 panel 的實驗結構，測試群體變大時，LLM 是否更少出聲反對。結果碰到天花板效應，沒有觀察到原先預期的差異。<a href="/projects/llm-multi-agent-bystander-study/">閱讀研究紀錄 →</a></p>
   </div>
   <div class="pf-item">
-    <h3>YouBike Dispatch-Information Simulation</h3>
+    <h3><span class="en">YouBike Dispatch-Information Simulation</span><span class="zh">YouBike 調度資訊模擬</span></h3>
     <p class="en">A 76-station simulation isolating the time value of disclosing existing rebalancing locations. <a href="/projects/youbike-dispatch-information-simulation/">Read the research record →</a></p>
-    <p class="zh">以 76 個站點的模擬，估計公開既有調度位置資訊能減少多少抵達時間。<a href="/projects/youbike-dispatch-information-simulation/">閱讀研究紀錄 →</a></p>
+    <p class="zh">我提出研究題目，並用類似 PM 的角色協助團隊把問題形式化：在不增加調度車輛的前提下，用 76 站模擬估計公開調度位置能省下多少時間。<a href="/projects/youbike-dispatch-information-simulation/">閱讀研究紀錄 →</a></p>
   </div>
   <div class="pf-item">
-    <h3>US Stock-Market NLP</h3>
+    <h3><span class="en">US Stock-Market NLP</span><span class="zh">美國股市 NLP 預測</span></h3>
     <p class="en">A five-person study comparing text models over MD&amp;A sections from 342 annual reports. <a href="/projects/us-stock-market-nlp/">Read the research record →</a></p>
-    <p class="zh">五人團隊以 342 份年報的 MD&amp;A 文字比較多種預測模型。<a href="/projects/us-stock-market-nlp/">閱讀研究紀錄 →</a></p>
+    <p class="zh">五人團隊從 342 份美國上市公司年報擷取 MD&amp;A，測試文字模型能否預測隔年財務指標方向。文章以公開 repo 與報告為準。<a href="/projects/us-stock-market-nlp/">閱讀研究紀錄 →</a></p>
   </div>
   <div class="pf-item">
-    <h3>ASUS AiCloud Patch-Diff Analysis</h3>
+    <h3><span class="en">N-Day CVE-2025-59366 Reproduction</span><span class="zh">N-Day CVE-2025-59366 復現</span></h3>
     <p class="en">A TeamT5 Camp reproduction of a disclosed AiCloud vulnerability using firmware diffing and dynamic tracing. <a href="/projects/asus-aicloud-cve-2025-59366/">Read the security record →</a></p>
-    <p class="zh">TeamT5 Camp 小組以 firmware diff 與動態追蹤重現已公開的 AiCloud 漏洞。<a href="/projects/asus-aicloud-cve-2025-59366/">閱讀資安紀錄 →</a></p>
+    <p class="zh">TeamT5 Camp 三人小組從 ASUS AiCloud 的 firmware patch 反推資料流，再以動態追蹤重現已公開的 path traversal 與 command injection 漏洞鏈。<a href="/projects/asus-aicloud-cve-2025-59366/">閱讀資安紀錄 →</a></p>
   </div>
   <div class="pf-item">
     <h3>FurnitureStyle</h3>
     <p class="en">A Django prototype that turns an image or description into structured furniture attributes and shopping queries. <a href="/projects/furniturestyle/">Read the project record →</a></p>
-    <p class="zh">把圖片或描述轉成家具屬性與購物搜尋條件的 Django prototype。<a href="/projects/furniturestyle/">閱讀專案紀錄 →</a></p>
+    <p class="zh">把家具辨識與色彩轉換拆成兩次模型呼叫，再將結構化結果送進購物搜尋的 Django prototype。<a href="/projects/furniturestyle/">閱讀專案紀錄 →</a></p>
   </div>
   <div class="pf-item">
     <h3>Lore</h3>
     <p class="en">A private LINE bot prototype for group memory, Q&amp;A, digests, and reminders. <a href="/projects/lore-group-memory/">Read the project record →</a></p>
-    <p class="zh">處理群組記憶、問答、摘要與提醒的私人 LINE bot prototype。<a href="/projects/lore-group-memory/">閱讀專案紀錄 →</a></p>
+    <p class="zh">把 LINE 群組裡散落的訊息整理成可查詢的記憶、摘要與提醒。目前仍是私人 prototype，還沒有真實群組的長期使用證據。<a href="/projects/lore-group-memory/">閱讀專案紀錄 →</a></p>
   </div>
   <div class="pf-item">
     <h3>Adventure Cube</h3>
     <p class="en">A team children's-story project whose active surface is now a batch story and TTS pipeline. <a href="/projects/adventure-cube/">Read the project record →</a></p>
-    <p class="zh">兒童故事團隊專案；目前可運作的部分是批次故事與 TTS pipeline。<a href="/projects/adventure-cube/">閱讀專案紀錄 →</a></p>
+    <p class="zh">我設計整體架構，也參與實際測試與回饋迭代。專案未正式上線，目前持續運作的是批次故事與 TTS pipeline。<a href="/projects/adventure-cube/">閱讀專案紀錄 →</a></p>
   </div>
   <div class="pf-item">
-    <h3>Confidential Computing / TrustZone Virtualization</h3>
+    <h3><span class="en">Confidential Computing / TrustZone Virtualization</span><span class="zh">機密運算／TrustZone 虛擬化</span></h3>
     <p class="en">Research at SSLab: virtualizing Arm TrustZone with AVF (related to Google pKVM).</p>
     <p class="zh">SSLab 研究：用 AVF 把 Arm TrustZone 虛擬化（與 Google pKVM 相關）。</p>
   </div>
   <div class="pf-item">
-    <h3>Virtual Machine</h3>
+    <h3><span class="en">Virtual Machine</span><span class="zh">虛擬機器</span></h3>
     <p class="en"><a href="/projects/114-2-vm-assignment-1-writeup/">Let a guest control host vCPU affinity</a> · <a href="/projects/114-2-vm-assignment-2-writeup/">Boot a Realm VM with early console output</a></p>
     <p class="zh"><a href="/projects/114-2-vm-assignment-1-writeup/">讓 guest 控制 host vCPU affinity</a> · <a href="/projects/114-2-vm-assignment-2-writeup/">啟動 Realm VM 並輸出 early console</a></p>
   </div>
   <div class="pf-item">
-    <h3>pKVM / SMMUv3 Device Passthrough</h3>
+    <h3><span class="en">pKVM / SMMUv3 Device Passthrough</span><span class="zh">pKVM / SMMUv3 裝置直通</span></h3>
     <p class="en">Extending host DMA isolation into protected guest assignment. <a href="/projects/nested-pkvm-smmu-device-passthrough/">Read the case study →</a></p>
-    <p class="zh">把 host DMA isolation 延伸到 protected guest device assignment。<a href="/projects/nested-pkvm-smmu-device-passthrough/">閱讀案例 →</a></p>
+    <p class="zh">把主機端的 DMA 隔離延伸到受保護 VM 的裝置指派。<a href="/projects/nested-pkvm-smmu-device-passthrough/">閱讀案例 →</a></p>
   </div>
   <div class="pf-item">
-    <h3>NTU Homeless Service Club</h3>
+    <h3><span class="en">NTU Homeless Service Club</span><span class="zh">台大無家者服務社</span></h3>
     <p class="en">Vice president (5th &amp; 6th terms): NGO partnerships, the club's first journal, and curation &amp; outreach at local markets.</p>
     <p class="zh">第 5、6 屆副社長：NGO 培力串聯、社團首刊、市集策展與行銷。</p>
   </div>
@@ -96,8 +97,8 @@ order: 1
       <p class="en">English one-line description.</p>
       <p class="zh">中文一行描述。</p>
     </div>
-  ▸ EN / 中文 由上方按鈕切換；預設 EN（想預設中文：把 checked 從 #pf-en 移到 #pf-zh）。
-  ▸ 標題 <h3> 中英共用，只有描述會隨語言切換。
+  ▸ EN / 中文 由上方按鈕切換；預設中文。
+  ▸ 專案名稱不需翻譯時可直接寫 <h3>；需要翻譯時在標題內分別使用 .en / .zh。
   ▸ 想寫完整長文時，把描述換成連結：<a href="/projects/xxx/">Read more →</a>
     （單一 project 頁模板：projects/example-project.md）
 -->

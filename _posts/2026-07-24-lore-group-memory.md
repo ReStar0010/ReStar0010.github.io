@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Lore: Building Memory and Follow-Through for LINE Groups"
+description: "A LINE bot prototype that turns scattered chat into retrievable facts, digests, and reminders. The code works in replay tests; real-group use has not validated the idea."
 date: 2026-07-24 01:03:00 +0800
 permalink: /projects/lore-group-memory/
 categories: [專案紀錄]

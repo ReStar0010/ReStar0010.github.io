@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Predicting Financial Direction from 342 Annual Reports"
+description: "What can 342 MD&A sections predict—and what does an 80% 'non-fail rate' leave out? A public-repository record of the team's text-model experiments."
 date: 2026-07-24 01:02:30 +0800
 permalink: /projects/us-stock-market-nlp/
 categories: [研究紀錄]
