@@ -1,87 +1,261 @@
 ---
 layout: page
-title: Writing / 文章
+title: Writing
 ---
 
-{% assign zh_posts = site.posts | where: 'lang', 'zh-TW' %}
-{% assign en_posts = site.posts | where: 'lang', 'en' %}
-{% assign fallback_posts = site.posts | where_exp: 'post', "post.lang != 'zh-TW' and post.lang != 'en'" %}
+<style>
+  .home-feed {
+    --home-feed-radius: 0.85rem;
+  }
 
-{% if site.lang == 'zh-TW' %}
-  {% assign zh_posts = zh_posts | concat: fallback_posts | sort: 'date' | reverse %}
-{% else %}
-  {% assign en_posts = en_posts | concat: fallback_posts | sort: 'date' | reverse %}
-{% endif %}
+  .home-feed__toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0.25rem 0 1.5rem;
+  }
 
-{% assign df_strftime_m = site.data.locales[site.lang].df.archives.strftime | default: '/ %m' %}
-{% assign df_dayjs_m = site.data.locales[site.lang].df.archives.dayjs | default: '/ MM' %}
+  .home-feed__label {
+    margin: 0;
+    color: var(--text-muted-color);
+    font-size: 0.9rem;
+  }
 
-<div id="archives" class="pl-xl-3">
-  <section aria-labelledby="writing-zh" lang="zh-TW">
-    <h2 id="writing-zh" class="mt-4 mb-3">
-      中文
-      <span class="lead text-muted ps-2">{{ zh_posts.size }}</span>
-    </h2>
+  .home-feed__toggle {
+    display: none;
+    flex: 0 0 auto;
+    gap: 0.25rem;
+    padding: 0.25rem;
+    border: 1px solid var(--btn-border-color);
+    border-radius: 999px;
+    background: var(--card-bg);
+  }
 
-    <div>
-      {% assign last_year = '' %}
-      {% for post in zh_posts %}
-        {% assign cur_year = post.date | date: '%Y' %}
+  .home-feed--enhanced .home-feed__toggle {
+    display: inline-flex;
+  }
 
-        {% if cur_year != last_year %}
-          {% unless forloop.first %}</ul>{% endunless %}
+  .home-feed__toggle button {
+    min-width: 4.5rem;
+    padding: 0.4rem 0.8rem;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--text-muted-color);
+    font: 600 0.78rem/1.2 ui-monospace, "SFMono-Regular", Consolas, monospace;
+    cursor: pointer;
+  }
 
-          <time class="year lead d-block">{{ cur_year }}</time>
-          {{ '<ul class="list-unstyled">' }}
+  .home-feed__toggle button[aria-pressed="true"] {
+    background: var(--link-color);
+    color: var(--main-bg);
+  }
 
-          {% assign last_year = cur_year %}
-        {% endif %}
+  .home-feed__toggle button:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+  }
 
-        <li>
-          {% assign ts = post.date | date: '%s' %}
-          <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: '%d' }}</span>
-          <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
-            {{ post.date | date: df_strftime_m }}
-          </span>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </li>
+  .home-feed__cards {
+    display: grid;
+    gap: 1rem;
+  }
 
-        {% if forloop.last %}</ul>{% endif %}
-      {% endfor %}
+  .home-feed__card {
+    padding: 1.35rem 1.45rem 1.25rem;
+    border: 1px solid var(--main-border-color);
+    border-radius: var(--home-feed-radius);
+    background: var(--card-bg);
+    box-shadow: var(--card-shadow);
+    transition:
+      border-color 150ms ease,
+      transform 150ms ease,
+      box-shadow 150ms ease;
+  }
+
+  .home-feed__card:hover {
+    border-color: color-mix(in srgb, var(--link-color) 38%, var(--main-border-color));
+    transform: translateY(-2px);
+  }
+
+  .home-feed__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 0.65rem;
+    margin-bottom: 0.55rem;
+    color: var(--text-muted-color);
+    font-size: 0.8rem;
+  }
+
+  .home-feed__category {
+    color: var(--link-color);
+    font-weight: 650;
+  }
+
+  .home-feed__meta-separator::before {
+    content: "·";
+  }
+
+  .home-feed__title {
+    margin: 0 0 0.55rem;
+    font-size: clamp(1.18rem, 2.4vw, 1.45rem);
+    line-height: 1.3;
+  }
+
+  .home-feed__title a {
+    color: var(--heading-color);
+    text-decoration: none;
+  }
+
+  .home-feed__title a:hover {
+    color: var(--link-color);
+  }
+
+  .home-feed__description {
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.65;
+  }
+
+  .home-feed__read {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .home-feed--enhanced[data-language="en"] .home-feed__zh,
+  .home-feed--enhanced[data-language="zh-TW"] .home-feed__en {
+    display: none;
+  }
+
+  @media (max-width: 576px) {
+    .home-feed__toolbar {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .home-feed__card {
+      padding: 1.1rem 1.15rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .home-feed__card {
+      transition: none;
+    }
+
+    .home-feed__card:hover {
+      transform: none;
+    }
+  }
+</style>
+
+<div class="home-feed" data-home-feed data-language="en">
+  <div class="home-feed__toolbar">
+    <p class="home-feed__label">
+      <span class="home-feed__en" lang="en">One story per project. Choose your reading language.</span>
+      <span class="home-feed__zh" lang="zh-TW">每個主題只顯示一次，請選擇閱讀語言。</span>
+    </p>
+
+    <div class="home-feed__toggle" role="group" aria-label="Article language">
+      <button type="button" data-language-button="en" aria-pressed="true">English</button>
+      <button type="button" data-language-button="zh-TW" aria-pressed="false">中文</button>
     </div>
-  </section>
+  </div>
 
-  <section aria-labelledby="writing-en" lang="en">
-    <h2 id="writing-en" class="mt-5 mb-3">
-      English
-      <span class="lead text-muted ps-2">{{ en_posts.size }}</span>
-    </h2>
+  <div class="home-feed__cards">
+    {% assign english_posts = site.posts | where: 'lang', 'en' %}
+    {% for post in english_posts %}
+      {% assign matching_posts = site.posts | where: 'translation_key', post.translation_key %}
+      {% assign chinese_posts = matching_posts | where: 'lang', 'zh-TW' %}
+      {% assign chinese_post = chinese_posts | first %}
 
-    <div>
-      {% assign last_year = '' %}
-      {% for post in en_posts %}
-        {% assign cur_year = post.date | date: '%Y' %}
+      <article class="home-feed__card">
+        <div class="home-feed__en" lang="en">
+          <div class="home-feed__meta">
+            <span class="home-feed__category">{{ post.categories | first }}</span>
+            <span class="home-feed__meta-separator" aria-hidden="true"></span>
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+          </div>
 
-        {% if cur_year != last_year %}
-          {% unless forloop.first %}</ul>{% endunless %}
+          <h2 class="home-feed__title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
 
-          <time class="year lead d-block">{{ cur_year }}</time>
-          {{ '<ul class="list-unstyled">' }}
+          <p class="home-feed__description">
+            {{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 190 }}
+          </p>
 
-          {% assign last_year = cur_year %}
+          <a class="home-feed__read" href="{{ post.url | relative_url }}">Read article →</a>
+        </div>
+
+        {% if chinese_post %}
+          <div class="home-feed__zh" lang="zh-TW">
+            <div class="home-feed__meta">
+              <span class="home-feed__category">{{ chinese_post.categories | first }}</span>
+              <span class="home-feed__meta-separator" aria-hidden="true"></span>
+              <time datetime="{{ chinese_post.date | date_to_xmlschema }}">{{ chinese_post.date | date: '%Y 年 %-m 月 %-d 日' }}</time>
+            </div>
+
+            <h2 class="home-feed__title">
+              <a href="{{ chinese_post.url | relative_url }}">{{ chinese_post.title }}</a>
+            </h2>
+
+            <p class="home-feed__description">
+              {{ chinese_post.description | default: chinese_post.excerpt | strip_html | normalize_whitespace | truncate: 110 }}
+            </p>
+
+            <a class="home-feed__read" href="{{ chinese_post.url | relative_url }}">閱讀文章 →</a>
+          </div>
         {% endif %}
-
-        <li>
-          {% assign ts = post.date | date: '%s' %}
-          <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: '%d' }}</span>
-          <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
-            {{ post.date | date: df_strftime_m }}
-          </span>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </li>
-
-        {% if forloop.last %}</ul>{% endif %}
-      {% endfor %}
-    </div>
-  </section>
+      </article>
+    {% endfor %}
+  </div>
 </div>
+
+<script>
+  (() => {
+    const feed = document.querySelector("[data-home-feed]");
+    const buttons = feed?.querySelectorAll("[data-language-button]");
+
+    if (!feed || !buttons) return;
+
+    feed.classList.add("home-feed--enhanced");
+
+    const setLanguage = (language, persist = true) => {
+      const nextLanguage = language === "zh-TW" ? "zh-TW" : "en";
+      feed.dataset.language = nextLanguage;
+
+      buttons.forEach((button) => {
+        button.setAttribute(
+          "aria-pressed",
+          String(button.dataset.languageButton === nextLanguage)
+        );
+      });
+
+      if (persist) {
+        try {
+          localStorage.setItem("home-language", nextLanguage);
+        } catch {
+          // The language toggle still works when storage is unavailable.
+        }
+      }
+    };
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        setLanguage(button.dataset.languageButton);
+      });
+    });
+
+    try {
+      setLanguage(localStorage.getItem("home-language"), false);
+    } catch {
+      setLanguage("en", false);
+    }
+  })();
+</script>
