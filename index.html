@@ -1,4 +1,87 @@
 ---
-layout: home
-# Index page
+layout: page
+title: Writing / 文章
 ---
+
+{% assign zh_posts = site.posts | where: 'lang', 'zh-TW' %}
+{% assign en_posts = site.posts | where: 'lang', 'en' %}
+{% assign fallback_posts = site.posts | where_exp: 'post', "post.lang != 'zh-TW' and post.lang != 'en'" %}
+
+{% if site.lang == 'zh-TW' %}
+  {% assign zh_posts = zh_posts | concat: fallback_posts | sort: 'date' | reverse %}
+{% else %}
+  {% assign en_posts = en_posts | concat: fallback_posts | sort: 'date' | reverse %}
+{% endif %}
+
+{% assign df_strftime_m = site.data.locales[site.lang].df.archives.strftime | default: '/ %m' %}
+{% assign df_dayjs_m = site.data.locales[site.lang].df.archives.dayjs | default: '/ MM' %}
+
+<div id="archives" class="pl-xl-3">
+  <section aria-labelledby="writing-zh" lang="zh-TW">
+    <h2 id="writing-zh" class="mt-4 mb-3">
+      中文
+      <span class="lead text-muted ps-2">{{ zh_posts.size }}</span>
+    </h2>
+
+    <div>
+      {% assign last_year = '' %}
+      {% for post in zh_posts %}
+        {% assign cur_year = post.date | date: '%Y' %}
+
+        {% if cur_year != last_year %}
+          {% unless forloop.first %}</ul>{% endunless %}
+
+          <time class="year lead d-block">{{ cur_year }}</time>
+          {{ '<ul class="list-unstyled">' }}
+
+          {% assign last_year = cur_year %}
+        {% endif %}
+
+        <li>
+          {% assign ts = post.date | date: '%s' %}
+          <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: '%d' }}</span>
+          <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
+            {{ post.date | date: df_strftime_m }}
+          </span>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+
+        {% if forloop.last %}</ul>{% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section aria-labelledby="writing-en" lang="en">
+    <h2 id="writing-en" class="mt-5 mb-3">
+      English
+      <span class="lead text-muted ps-2">{{ en_posts.size }}</span>
+    </h2>
+
+    <div>
+      {% assign last_year = '' %}
+      {% for post in en_posts %}
+        {% assign cur_year = post.date | date: '%Y' %}
+
+        {% if cur_year != last_year %}
+          {% unless forloop.first %}</ul>{% endunless %}
+
+          <time class="year lead d-block">{{ cur_year }}</time>
+          {{ '<ul class="list-unstyled">' }}
+
+          {% assign last_year = cur_year %}
+        {% endif %}
+
+        <li>
+          {% assign ts = post.date | date: '%s' %}
+          <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: '%d' }}</span>
+          <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
+            {{ post.date | date: df_strftime_m }}
+          </span>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+
+        {% if forloop.last %}</ul>{% endif %}
+      {% endfor %}
+    </div>
+  </section>
+</div>

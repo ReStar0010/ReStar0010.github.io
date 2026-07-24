@@ -4,10 +4,14 @@ title: "When More LLM Agents Did Not Diffuse Responsibility"
 description: "We designed a panel experiment to ask whether LLM agents go quiet in larger groups. The run hit an intervention ceiling, leaving a narrow null result and a clearer next experiment."
 date: 2026-07-24 01:00:00 +0800
 permalink: /projects/llm-multi-agent-bystander-study/
-categories: [研究紀錄]
+lang: en
+translation_key: llm-multi-agent-bystander-study
+categories: [Research]
 tags: [Project, Multi-Agent Systems, LLM, AI Assisted]
 published: true
 ---
+
+[閱讀中文版](/zh/projects/llm-multi-agent-bystander-study/)
 
 The result was not the one in the research plan.
 
@@ -15,8 +19,8 @@ We expected that an LLM agent might become less likely to object when more
 witnesses were present. After 82 clean panel trials, the measured intervention
 rate stayed at the ceiling across groups of three, five, and nine agents.
 
-This was a three-person course research project built with
-[TinyTroupe](https://github.com/microsoft/TinyTroupe). The original plan was to
+Working with two classmates and
+[TinyTroupe](https://github.com/microsoft/TinyTroupe), we originally planned to
 replicate the classical bystander effect inside LLM-driven panels, inspect the
 reasoning associated with non-intervention, and test ways to assign
 responsibility more explicitly. The experiment instead became an exercise in
@@ -95,10 +99,10 @@ in the conversation and defends the proposal, a less explicit review setting,
 or a broader set of models could create enough variation to test whether
 responsibility ever diffuses.
 
-My contribution included designing the experiment structure: turning the
-bystander-effect question into controlled panel conditions with different
-group sizes. This was still a three-person course project; I am not assigning
-the entire implementation, analysis, or writing to myself.
+My role centered on the experimental structure and related research design. I
+helped turn the bystander-effect question into controlled panel conditions with
+different group sizes; the submitted report and completed runs came out of our
+collaboration.
 
 The original [course project report is available here](/files/llm-multi-agent-bystander-study-project-report.md).
 It is a snapshot of the submitted work, including the team's original
@@ -110,4 +114,4 @@ are not included.
 
 **Context:** Advanced Information Technologies II, National Taiwan University<br>
 **My contribution:** Experimental structure and research design<br>
-**Status:** Completed three-person course research artifact
+**Status:** Completed course research artifact

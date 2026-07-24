@@ -1,9 +1,14 @@
 ---
 title: 為什麼寫
 date: 2026-07-12 08:00:00 +0800
-categories: [隨筆]
+permalink: /posts/why-i-write/
+categories: [Essay]
 tags: [zh]
+lang: zh-TW
+translation_key: why-i-write
 ---
+
+[English version](/en/posts/why-i-write/)
 
 今天坐在房間的地板上望著玻璃中半反射的天花板發呆。覺得當下的感受跟體驗很不真實，當我說出不真實時，應該代表我知道什麼是真實。但事實上，所謂的真實只不過是更沒有雜訊、模糊的感受。好，不說廢話了。這篇文章主要是簡單紀錄未來會在blog上發佈的內容以及規劃。
 

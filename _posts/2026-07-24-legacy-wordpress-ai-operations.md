@@ -4,10 +4,14 @@ title: "把老 WordPress 的更新流程壓進三分鐘"
 description: "一份公部門小打工裡，我如何用 AI 拆開 REST、FTP 與瀏覽器操作，再把一次性的摸索寫成可重跑、可驗證的工作流。"
 date: 2026-07-24 01:06:00 +0800
 permalink: /projects/legacy-wordpress-ai-operations/
-categories: [專案紀錄]
+categories: [Project]
 tags: [Project, WordPress, Automation, AI Assisted]
+lang: zh-TW
+translation_key: legacy-wordpress-ai-operations
 published: true
 ---
+
+[English version](/en/projects/legacy-wordpress-ai-operations/)
 
 我的任務很普通：把收到的資料更新到一個老舊 WordPress 網站。
 

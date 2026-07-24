@@ -3,10 +3,16 @@ layout: post
 title: "114-2 Virtual Machine Assignment 1 Writeup"
 date: 2026-07-23 09:00:00 +0800
 permalink: /projects/114-2-vm-assignment-1-writeup/
-categories: [作業紀錄]
+lang: en
+translation_key: 114-2-vm-assignment-1-writeup
+categories: [Coursework]
 tags: [Project, Virtual Machines, AI Assisted]
 published: true
 ---
+
+[繁體中文版](/zh/projects/114-2-vm-assignment-1-writeup/)
+
+This was an individual course assignment completed with step-by-step implementation guidance from Claude Code. I followed and learned the guest-to-HVC-to-KVM control path, then cross-checked the runtime affinity on the host. The technical writeup below preserves the submitted work and does not claim independently authored implementation.
 
 2026 Spring · Virtual Machine (VM)<br>
 Ming-Lung Tsai · CSIE, B12902078

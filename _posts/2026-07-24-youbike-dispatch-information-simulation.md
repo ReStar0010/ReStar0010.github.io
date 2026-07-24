@@ -4,10 +4,14 @@ title: "What Is the Time Value of Showing Users Where YouBike Rebalancing Happen
 description: "A 76-station simulation asks a narrow question: if bikes are already being rebalanced, how much time can users save simply by seeing where?"
 date: 2026-07-24 01:01:00 +0800
 permalink: /projects/youbike-dispatch-information-simulation/
-categories: [研究紀錄]
+lang: en
+translation_key: youbike-dispatch-information-simulation
+categories: [Research]
 tags: [Project, Simulation, YouBike, AI Assisted]
 published: true
 ---
+
+[閱讀中文版](/zh/projects/youbike-dispatch-information-simulation/)
 
 The simulation held the number and location of rebalanced bikes fixed. The only
 thing that changed was whether users knew where those bikes were.
@@ -17,9 +21,9 @@ information reduced mean arrival time by 1.8 to 2.4 minutes across the report's
 physically plausible dispatch range. That is a simulated 15% to 22% reduction,
 not a field measurement.
 
-This was a Group 4 project for NTU's Computer Networks Laboratory. The
-repository contains the processed data, simulation, maps, figures, and report,
-but it is not publicly accessible, so this page does not link it.
+We developed the study in NTU's Computer Networks Laboratory. The repository
+contains the processed data, simulation, maps, figures, and report, but it is
+not publicly accessible, so this page does not link it.
 
 ## Isolating the value of information
 
@@ -88,13 +92,14 @@ exists where the dynamic data suggests, and if users respond according to the
 modeled detour rule, location information has measurable value without adding
 bikes.
 
-I proposed this topic and worked in a PM-like role, helping the team turn the
-initial question into a tractable comparison. I also participated in the
-formalization of the research question and simulation comparison. The
-reported numbers remain team results rather than my individual result.
+I proposed the topic and then worked in a PM-like role as the team shaped it
+into a tractable comparison. I helped formalize the research question and the
+two simulation conditions, and collaborated with teammates around that
+framing while the implementation, figures, report, and reported numbers came
+together through our shared work.
 
 ---
 
 **Context:** Computer Networks Laboratory, National Taiwan University<br>
-**My contribution:** Topic proposal, PM-like coordination, and formalization<br>
-**Status:** Completed team simulation
+**My contribution:** Topic proposal, PM-like formalization, and team collaboration<br>
+**Status:** Completed simulation study

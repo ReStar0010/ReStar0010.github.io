@@ -1,17 +1,20 @@
 ---
 layout: post
 title: "Predicting Financial Direction from 342 Annual Reports"
-description: "What can 342 MD&A sections predict—and what does an 80% 'non-fail rate' leave out? A public-repository record of the team's text-model experiments."
+description: "What can 342 MD&A sections predict—and what does an 80% 'non-fail rate' leave out? We compared text models while keeping that metric's limits explicit."
 date: 2026-07-24 01:02:30 +0800
 permalink: /projects/us-stock-market-nlp/
-categories: [研究紀錄]
+lang: en
+translation_key: us-stock-market-nlp
+categories: [Research]
 tags: [Project, NLP, Machine Learning, AI Assisted]
 published: true
 ---
 
-This five-person project tested whether the language in a company's annual
-report could help predict the direction of next year's gross margin or return
-on assets.
+[閱讀中文版](/zh/projects/us-stock-market-nlp/)
+
+We tested whether the language in a company's annual report could help predict
+the direction of next year's gross margin or return on assets.
 
 The dataset contained 342 U.S. listed companies. For each company, the team
 extracted roughly 2,000 to 5,000 words from the Management Discussion and
@@ -65,10 +68,8 @@ conservative class. The report says this improved the balance between precision
 and non-fail rate, but the small dataset limits how much can be inferred from
 the result.
 
-The presentation assigns my work to hierarchical agglomerative clustering,
-RNN experiments, the proposal, and shared merge-model work. The GitHub history
-is a bulk upload under another teammate's account, so the presentation is the
-source for that division rather than per-file commit attribution.
+My work focused on hierarchical agglomerative clustering, RNN experiments, the
+proposal, and the merge model I developed with teammates.
 
 ## What the experiment did not establish
 
@@ -84,6 +85,6 @@ confusion matrices, and designed an ensemble around the errors it cared about.
 
 ---
 
-**Context:** Five-person text-mining team project<br>
-**My documented work:** HAC, RNN experiments, proposal, and shared merge-model work<br>
+**Context:** Text Mining course project<br>
+**My role:** HAC, RNN experiments, proposal, and shared merge-model work<br>
 **Status:** Completed public course artifact; investment usefulness not validated

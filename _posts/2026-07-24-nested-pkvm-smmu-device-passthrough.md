@@ -3,10 +3,14 @@ layout: post
 title: "Device Passthrough Investigation & Implementation on SMMU-Supported pKVM"
 date: 2026-07-24 00:01:00 +0800
 permalink: /projects/nested-pkvm-smmu-device-passthrough/
-categories: [案例研究]
+lang: en
+translation_key: nested-pkvm-smmu-device-passthrough
+categories: [Case Study]
 tags: [Project, pKVM, SMMUv3, AI Assisted]
 published: true
 ---
+
+[繁體中文版](/zh/projects/nested-pkvm-smmu-device-passthrough/)
 
 We started from the `pkvm-smmu-v5` development branch. Its hypervisor-owned SMMUv3 driver protected the host from device DMA by keeping the real stream table under EL2 control. Our project asked a different question: could the same foundation route an assigned device through a protected guest's Stage-2?
 
@@ -54,13 +58,15 @@ The implementation covered four connected pieces:
 
 ## My role: turning the design into a runnable experiment
 
-My role was closest to a project manager and systems integrator. I kept the research question, implementation milestones, and validation plan pointed at the same target: showing where host DMA isolation ended and what protected guest passthrough still required.
+I contributed the guest Stage-2 passthrough ports and a self-test harness on top of an existing collaborative kernel tree. Those pieces sat inside a larger prototype that we designed, integrated, and debugged together.
+
+Within the team, my role was closest to project management and systems integration. I helped keep the research question, implementation milestones, and validation plan pointed at the same target: showing where host DMA isolation ended and what protected guest passthrough still required.
 
 I helped shape the experiment into two complementary paths instead of treating a successful boot or ping as sufficient evidence. Proof A isolated the security property by checking DMA through a protected guest's Stage-2. Path B exercised the systems path with a full Ubuntu guest, a real e1000e driver, and bidirectional traffic. Keeping those claims separate also made the unfinished production criterion explicit.
 
-I personally brought up the nested environment: QEMU's emulated EL2, GICv3, and SMMUv3 at L0; the Linux pKVM host at L1; and the protected test VM and full Ubuntu guest at L2. Much of the work was integration debugging across boundaries — kernel configuration, VFIO modes, SMMU register access, nested BAR handling, and the difference between a control-plane trace and actual device I/O.
+Together we brought up QEMU's emulated EL2, GICv3, and SMMUv3 at L0; the Linux pKVM host at L1; and the protected test VM and full Ubuntu guest at L2. The work required integration debugging across kernel configuration, VFIO modes, SMMU register access, nested BAR handling, and the difference between a control-plane trace and actual device I/O.
 
-That role was less about owning one isolated patch and more about making the complete experiment executable, deciding what the next failure could prove, and keeping the final report honest about the boundary of the result.
+My contribution was therefore part of a collaborative systems experiment: getting the relevant paths and tests into a runnable state, deciding what the next failure could prove, and keeping the final report honest about the boundary of the result.
 
 ## Three implementation decisions
 
@@ -206,6 +212,6 @@ That end-to-end way of reading a system now carries into my kvTZ-Trusty research
 
 ---
 
-**Context:** CSIE 5310 Virtual Machines, Spring 2026 · Group Final Project
+**Context:** CSIE 5310 Virtual Machines, Spring 2026 · Final Project
 
 **Report:** [Download the final report](/files/vm-final-pkvm-smmu-report.pdf)

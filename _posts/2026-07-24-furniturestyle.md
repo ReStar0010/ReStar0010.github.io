@@ -4,16 +4,20 @@ title: "FurnitureStyle: Turning an Image into a Searchable Furniture Description
 description: "Instead of asking one prompt to recognize furniture and rewrite its color at once, this prototype split the job into two inspectable steps before searching."
 date: 2026-07-24 01:02:00 +0800
 permalink: /projects/furniturestyle/
-categories: [專案紀錄]
+lang: en
+translation_key: furniturestyle
+categories: [Project]
 tags: [Project, Web, AI Assisted]
 published: true
 ---
 
-FurnitureStyle was a Django group prototype for searching furniture from an
+[中文版](/zh/projects/furniturestyle/)
+
+FurnitureStyle was a Django prototype for searching furniture from an
 image or text description. Its central path converted an input into a small
 structured description, then used that description to query shopping results.
 
-The prototype is associated with an NTU Web Application Programming group
+The prototype is associated with an NTU Web Application Programming course
 submission, although the current course artifact does not identify the project
 by name or record a final evaluation. This page therefore describes the code
 that exists, not a deployment or course outcome.
@@ -54,16 +58,14 @@ original, analogous, or complementary color mode, then move to a result page.
 The result cards linked to products and supported favorites; the account view
 also exposed search history.
 
-The commit history attributes four changes to me:
+My implementation work covered changes to the profile and furniture data
+models, favorites and user-profile features, and the two-stage classifier with
+its color-mode handling. I collaborated with the member responsible for the front-end flow,
+but the author identity recorded in the supplied source is still unresolved,
+so I do not list that front-end work as mine.
 
-- the initial project import;
-- profile and furniture-model changes;
-- favorites and user-profile functionality;
-- the two-stage classifier and color-mode handling.
-
-A teammate's front-end history covers authentication, the search and result
-interfaces, favorites, and responsive fixes. The repository is private, so
-this article does not link or reproduce its source.
+The repository is private, so this article does not link or reproduce its
+source.
 
 The retained final-project archive contains a report, slides, a demo, and the
 system-flow diagram above. A separately supplied RAR contains the front-end
@@ -83,6 +85,6 @@ good enough for real purchasing decisions.
 
 ---
 
-**Context:** Group web-application prototype<br>
+**Context:** Web-application prototype<br>
 **My evidenced work:** profiles, favorites, data-model changes, and two-stage furniture classification<br>
 **Status:** Prototype; evaluation and course identity still need confirmation
