@@ -5,7 +5,7 @@ date: 2026-07-24 00:01:00 +0800
 permalink: /zh/projects/nested-pkvm-smmu-device-passthrough/
 lang: zh-TW
 translation_key: nested-pkvm-smmu-device-passthrough
-categories: [Case Study]
+categories: [Project]
 tags: [Project, pKVM, SMMUv3, AI Assisted]
 published: true
 ---

@@ -6,7 +6,7 @@ date: 2026-07-24 01:02:30 +0800
 permalink: /projects/us-stock-market-nlp/
 lang: en
 translation_key: us-stock-market-nlp
-categories: [Research]
+categories: [Project]
 tags: [Project, NLP, Machine Learning, AI Assisted]
 published: true
 ---
