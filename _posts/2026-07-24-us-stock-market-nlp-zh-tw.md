@@ -13,6 +13,10 @@ published: true
 
 [Read in English](/projects/us-stock-market-nlp/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 我們測試公司年報中的文字，能否協助預測下一年度毛利率或資產報酬率的變動方向。
 
 資料集包含 342 家美國上市公司。團隊從每家公司的年報「管理階層討論與分析」（Management Discussion and Analysis，MD&A）章節擷取約 2,000 至 5,000 個英文單字，再把下一年度的財務變化標示為成長、持平或衰退。
@@ -51,9 +55,3 @@ published: true
 相對於模型變體的數量，樣本不大，而且類別分布不平均。報告沒有記錄市場基準、交易成本、依時間切分的回測，也沒有樣本外交易模擬。因此，約 80% 這個數字必須和專案自行定義的「非失敗率」綁在一起。
 
 這份紀錄能支持的範圍較窄：團隊建立了一份 MD&A 資料集，比較傳統與神經網路文字模型，透過混淆矩陣檢視錯誤方向，並針對在意的錯誤設計集成模型。
-
----
-
-**課程：** 文字探勘課程專案<br>
-**我的角色：** HAC、RNN 實驗、提案與共同參與合併模型<br>
-**狀態：** 已完成並公開的課程成果；投資用途未經驗證

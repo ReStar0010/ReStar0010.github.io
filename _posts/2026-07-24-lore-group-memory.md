@@ -13,6 +13,10 @@ published: true
 
 [中文版](/zh/projects/lore-group-memory/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 Group chats are good at producing context and bad at preserving it. A decision,
 event, or promise can be clear at 10 p.m. and nearly impossible to recover a
 week later.
@@ -76,8 +80,3 @@ The repository remains private, and no private chat transcript is used on this
 page. The next useful test is a real group using Lore long enough to reveal
 which memories are useful, which are intrusive, and which reminders people
 actually follow.
-
----
-
-**Role:** Prototype design and implementation<br>
-**Status:** Active private prototype; real-user evidence pending

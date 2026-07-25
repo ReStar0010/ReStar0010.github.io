@@ -13,6 +13,10 @@ published: true
 
 [English version](/projects/lore-group-memory/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 群組聊天很容易產生脈絡，卻不容易保存脈絡。晚上十點還很清楚的決定、活動或承諾，一週後可能就很難找回來。
 
 Lore 是一個私人原型，把 LINE 群組視為可能包含事實與待辦事項的訊息流。它可以接收訊息、根據已保存的群組記憶回答問題、產生摘要並建立提醒。目前還沒有真實群組使用過 Lore，現有證據只有實作與重播測試。
@@ -50,8 +54,3 @@ LINE webhook
 我的實作範圍涵蓋 LINE webhook、訊息儲存、事實生命週期、PII gate、檢索、skill registry、摘要、問答、提醒與重播工具。
 
 程式庫仍是私人資料，本文也沒有使用任何私人聊天紀錄。接下來需要讓一個真實群組實際使用 Lore 一段時間，看看哪些記憶有用、哪些讓人覺得被打擾，以及哪些提醒真的會被執行。
-
----
-
-**角色：** 原型設計與實作<br>
-**狀態：** 持續開發中的私人原型；尚無真實群組使用證據

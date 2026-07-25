@@ -13,6 +13,10 @@ published: true
 
 [中文版](/zh/projects/adventure-cube/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 Adventure Cube began as an Expo and Django application that generated
 children's stories on demand. The part that remains active is different: a
 batch pipeline that generates a story corpus, cleans the text, normalizes
@@ -91,9 +95,3 @@ product and my bounded contribution but does not point readers to the source.
 A future version should choose one direction: keep the batch content system,
 revive the live app, or use a smaller hybrid that serves pre-generated stories
 without the dormant Django runtime.
-
----
-
-**Context:** Generative-story prototype<br>
-**My contribution:** Overall architecture, testing and feedback iteration, story UI, prompt/context material, TTS experimentation, audio integration, and handover<br>
-**Status:** Batch pipeline active; live runtime dormant; repository withheld pending security cleanup

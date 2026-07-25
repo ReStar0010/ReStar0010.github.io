@@ -13,6 +13,10 @@ published: true
 
 [Read in English](/projects/llm-multi-agent-bystander-study/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 結果和研究計畫裡預期的不一樣。
 
 我們原本認為，當現場有更多旁觀者時，LLM 代理可能比較不會提出異議。但在 82 次資料完整的面板試驗中，三人、五人和九人組的介入率都維持在天花板。
@@ -70,9 +74,3 @@ published: true
 我的貢獻是實驗結構及相關研究設計。我協助把旁觀者效應的問題轉成不同群體規模的受控面板條件；實作、試驗執行、分析與寫作則不在我主張獨立完成的範圍內。
 
 [課程專案報告原文在這裡](/files/llm-multi-agent-bystander-study-project-report.md)。它保留了團隊繳交時的內容和原始解讀。本頁在已完成的試驗不足以支持報告中較廣泛的主張時，採用更窄的說法。人物設定檔和原始 `[THINK]` 推理紀錄未公開。
-
----
-
-**課程：** 國立臺灣大學進階資訊科技（二）<br>
-**我的貢獻：** 實驗結構與研究設計<br>
-**狀態：** 已完成的課程研究成果

@@ -13,6 +13,10 @@ published: true
 
 [English version](/projects/adventure-cube/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 Adventure Cube 最初是以 Expo 與 Django 開發的應用程式，可以即時生成兒童故事。現在仍在運作的部分已經不同：它是一條批次流程，負責產生故事語料、清理文字、統一臺灣用語，再輸出旁白檔案。
 
 這是理解目前程式庫狀態時最重要的差別。即時執行環境仍存在，但已經停用；批次內容流程才是現在可工作的部分。
@@ -64,9 +68,3 @@ TTS 腳本會讀取一個存放清理後故事的目錄，再用 Gemini 的 prev
 私人程式庫也需要先輪替憑證並清理歷史紀錄，才適合公開或提供連結。因此，這篇文章只記錄產品與我的有限貢獻，不把讀者導向原始碼。
 
 未來若要重啟，應先選擇一個方向：保留批次內容系統、恢復即時應用程式，或採用較小的混合方案，在不啟用目前 Django 執行環境的情況下提供預先生成的故事。
-
----
-
-**情境：** 生成式故事原型<br>
-**我的貢獻：** 整體架構、測試與回饋迭代、故事介面、提示與 context 素材、TTS 實驗、音訊整合及交接<br>
-**狀態：** 批次流程使用中；即時執行環境停用；程式庫因安全清理尚未公開

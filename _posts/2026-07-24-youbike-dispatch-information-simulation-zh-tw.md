@@ -13,6 +13,10 @@ published: true
 
 [Read in English](/projects/youbike-dispatch-information-simulation/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 模擬固定了重新調度的車輛數量和位置，唯一改變的是使用者是否知道車被調到哪裡。
 
 在模型估計的臺大周邊缺車率約 32% 時，公開這項資訊讓平均抵達時間減少 1.8 至 2.4 分鐘，適用範圍是報告中符合現實條件的調度量。換算後約減少 15% 至 22%，但這是模擬結果，不是實地量測。
@@ -59,9 +63,3 @@ published: true
 因此，這項研究的結論帶有條件：如果調度供給確實出現在動態資料推測的位置，而且使用者依照模型中的繞路規則行動，那麼不增加車輛，只公開位置資訊，也能在模型中產生可測量的價值。
 
 我提出這個題目，之後以類似 PM 的角色和團隊一起把它整理成可分析的比較。我協助形式化研究問題與兩種模擬條件，並和隊友協作梳理研究框架；實作、圖表、報告與數據結果則來自我們共同完成的工作。
-
----
-
-**課程：** 國立臺灣大學計算機網路實驗<br>
-**我的貢獻：** 題目提案、類 PM 的形式化工作與團隊協作<br>
-**狀態：** 已完成的模擬研究

@@ -12,6 +12,10 @@ published: true
 
 [繁體中文版](/zh/projects/nested-pkvm-smmu-device-passthrough/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 We started from the `pkvm-smmu-v5` development branch. Its hypervisor-owned SMMUv3 driver protected the host from device DMA by keeping the real stream table under EL2 control. Our project asked a different question: could the same foundation route an assigned device through a protected guest's Stage-2?
 
 The absence of a guest-assignment interface was therefore not necessarily an omission in the original work. Host DMA isolation and guest device passthrough are different scopes. We treated the branch as a base and implemented the additional ownership, attachment, and teardown path required by the second.
@@ -212,6 +216,4 @@ That end-to-end way of reading a system now carries into my kvTZ-Trusty research
 
 ---
 
-**Context:** CSIE 5310 Virtual Machines, Spring 2026 · Final Project
-
-**Report:** [Download the final report](/files/vm-final-pkvm-smmu-report.pdf)
+[Download the final report](/files/vm-final-pkvm-smmu-report.pdf)

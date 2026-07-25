@@ -13,6 +13,10 @@ published: true
 
 [English version](/en/projects/legacy-wordpress-ai-operations/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 我的任務很普通：把收到的資料更新到一個老舊 WordPress 網站。
 
 真正開始操作後，事情卻不只是登入後台、改字、按下更新。有些內容能從 REST 讀取，
@@ -93,9 +97,3 @@ FTP 路徑與臨時判斷裡的知識，現在有了可以檢查、重跑與交�
 
 這篇先停在工程紀錄。產出變快之後，工時、報酬與組織知道多少，會形成另一組問題；
 它們需要不同的證據，也適合另外寫。
-
----
-
-**情境：** 公部門單位的短期行政打工（去識別化）<br>
-**我的工作：** 用 AI 協助拆解舊 WordPress 的操作介面，建立可重跑的 publishing workflow 與驗證規則<br>
-**證據邊界：** 執行紀錄與 runbook 可驗證；單位、實際內容、內部流程與私密連線資訊不公開

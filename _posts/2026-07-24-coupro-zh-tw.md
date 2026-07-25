@@ -12,6 +12,10 @@ published: true
 
 [English](/projects/coupro/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 ```text
 實驗一 · 三週 · 151 位使用者 · 123 次實體核銷
 實驗二 · 一週 · 新增 88 位使用者 · 新增 113 次實體核銷
@@ -179,9 +183,3 @@ CouPro 的成果比一份簡報多，但還不到一個已獲證明的市集。
 - 代理對代理市集仍是下一個實驗提案。
 
 這就是專案的真實邊界。CouPro 證明團隊能打造並操作真實交易循環，也改變了我對開發用途的看法：開發不是用更多功能捍衛第一個想法，而是把下一個重要的不確定性降到足夠便宜，讓我們可以實際測試。
-
----
-
-**角色：** CTO · 產品
-
-**背景：** 台大創意創業學程第 18 屆

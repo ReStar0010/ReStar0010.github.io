@@ -62,21 +62,6 @@ title: Writing
     gap: 1rem;
   }
 
-  .home-feed__disclosure {
-    margin: -0.45rem 0 1.5rem;
-    padding: 0.8rem 1rem;
-    border-left: 3px solid var(--link-color);
-    border-radius: 0.25rem var(--home-feed-radius) var(--home-feed-radius) 0.25rem;
-    background: var(--card-bg);
-    color: var(--text-muted-color);
-    font-size: 0.88rem;
-    line-height: 1.6;
-  }
-
-  .home-feed__disclosure p {
-    margin: 0;
-  }
-
   .home-feed__card {
     padding: 1.35rem 1.45rem 1.25rem;
     border: 1px solid var(--main-border-color);
@@ -181,15 +166,6 @@ title: Writing
       <button type="button" data-language-button="zh-TW" aria-pressed="false">中文</button>
     </div>
   </div>
-
-  <aside class="home-feed__disclosure" aria-label="AI-assisted writing disclosure">
-    <p class="home-feed__en" lang="en">
-      I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
-    </p>
-    <p class="home-feed__zh" lang="zh-TW">
-      這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
-    </p>
-  </aside>
 
   <div class="home-feed__cards">
     {% assign english_posts = site.posts | where: 'lang', 'en' %}

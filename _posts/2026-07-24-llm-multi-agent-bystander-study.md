@@ -13,6 +13,10 @@ published: true
 
 [閱讀中文版](/zh/projects/llm-multi-agent-bystander-study/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 The result was not the one in the research plan.
 
 We expected that an LLM agent might become less likely to object when more
@@ -109,9 +113,3 @@ It is a snapshot of the submitted work, including the team's original
 interpretation. This page uses narrower language where the completed runs do
 not support the report's broader claims. Persona files and raw `[THINK]` traces
 are not included.
-
----
-
-**Context:** Advanced Information Technologies II, National Taiwan University<br>
-**My contribution:** Experimental structure and research design<br>
-**Status:** Completed course research artifact

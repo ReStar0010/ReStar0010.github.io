@@ -12,6 +12,10 @@ published: true
 
 [English](/projects/nested-pkvm-smmu-device-passthrough/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 我們從 `pkvm-smmu-v5` 開發分支開始。該分支由 hypervisor 擁有的 SMMUv3 驅動把真實 stream table 留在 EL2 控制下，藉此防止裝置 DMA 侵犯 host。我們的專案問的是另一個問題：能否以相同基礎，讓指定裝置透過受保護 guest 的 Stage-2 進行轉譯？
 
 因此，原始工作沒有 guest assignment 介面，不一定是疏漏。Host DMA 隔離和 guest 裝置直通的範圍不同。我們把該分支當作基礎，實作後者所需的額外所有權、attach 和 teardown 路徑。
@@ -212,6 +216,4 @@ assigned device DMA
 
 ---
 
-**背景：** CSIE 5310 Virtual Machines，2026 春季 · 期末專案
-
-**報告：** [下載期末報告](/files/vm-final-pkvm-smmu-report.pdf)
+[下載期末報告](/files/vm-final-pkvm-smmu-report.pdf)

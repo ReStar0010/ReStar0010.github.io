@@ -13,6 +13,10 @@ published: true
 
 [English version](/projects/furniturestyle/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 FurnitureStyle 是一個以 Django 開發的原型，讓使用者透過圖片或文字描述搜尋家具。主要流程會先把輸入轉成簡短的結構化描述，再用這段描述查詢購物搜尋結果。
 
 這個原型可能是臺大 Web 應用程式設計課程的期末成果，但現有的課程資料沒有寫出專案名稱，也沒有留下最終評量。因此，這篇文章只描述目前可見的程式碼，不把它寫成已部署的產品或已確認的課程成果。
@@ -52,9 +56,3 @@ _期末資料中的初步流程圖。前端原始碼可對上 Vue 登入、搜�
 目前沒有分類準確率、推薦品質、使用者採用或正式部署的評估紀錄。專案與課程的關係也是依時間與脈絡推定，並非課程提交頁面明確記載。
 
 這個原型可以證明一條可運作的產品流程，以及一次具體的提示架構調整；但它不能證明搜尋結果已經適合支援真實的購買決策。
-
----
-
-**情境：** Web 應用程式原型<br>
-**有證據支持的個人工作：** 個人資料、收藏、資料模型修改，以及兩階段家具分類<br>
-**狀態：** 原型；評估結果與課程身分仍待確認

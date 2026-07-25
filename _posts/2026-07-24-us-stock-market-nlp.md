@@ -13,6 +13,10 @@ published: true
 
 [閱讀中文版](/zh/projects/us-stock-market-nlp/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 We tested whether the language in a company's annual report could help predict
 the direction of next year's gross margin or return on assets.
 
@@ -82,9 +86,3 @@ own non-fail definition.
 The useful record is narrower: a team assembled an MD&A dataset, compared
 traditional and neural text models, inspected the error direction through
 confusion matrices, and designed an ensemble around the errors it cared about.
-
----
-
-**Context:** Text Mining course project<br>
-**My role:** HAC, RNN experiments, proposal, and shared merge-model work<br>
-**Status:** Completed public course artifact; investment usefulness not validated

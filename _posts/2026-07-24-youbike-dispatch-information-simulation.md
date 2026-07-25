@@ -13,6 +13,10 @@ published: true
 
 [閱讀中文版](/zh/projects/youbike-dispatch-information-simulation/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 The simulation held the number and location of rebalanced bikes fixed. The only
 thing that changed was whether users knew where those bikes were.
 
@@ -97,9 +101,3 @@ into a tractable comparison. I helped formalize the research question and the
 two simulation conditions, and collaborated with teammates around that
 framing while the implementation, figures, report, and reported numbers came
 together through our shared work.
-
----
-
-**Context:** Computer Networks Laboratory, National Taiwan University<br>
-**My contribution:** Topic proposal, PM-like formalization, and team collaboration<br>
-**Status:** Completed simulation study

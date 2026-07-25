@@ -13,6 +13,10 @@ published: true
 
 [中文版](/zh/projects/furniturestyle/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 FurnitureStyle was a Django prototype for searching furniture from an
 image or text description. Its central path converted an input into a small
 structured description, then used that description to query shopping results.
@@ -82,9 +86,3 @@ submission page.
 The prototype is useful evidence of a working product path and a specific
 prompt-architecture revision. It is not evidence that the search results were
 good enough for real purchasing decisions.
-
----
-
-**Context:** Web-application prototype<br>
-**My evidenced work:** profiles, favorites, data-model changes, and two-stage furniture classification<br>
-**Status:** Prototype; evaluation and course identity still need confirmation

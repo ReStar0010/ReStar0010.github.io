@@ -13,6 +13,10 @@ published: true
 
 [繁體中文](/projects/legacy-wordpress-ai-operations/)
 
+> I used AI to move quickly through this first batch of project articles. Each one was expanded from reports, code, or notes I already had, then checked against those sources before publishing.
+>
+> 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
+
 My task was ordinary: update a legacy WordPress site with material I received.
 
 Once I started, it turned out to involve more than logging in, editing some
@@ -121,9 +125,3 @@ This article stops at the engineering record. Faster execution raises a
 different set of questions about working hours, compensation, and what the
 organization knows. Those questions need different evidence and belong in a
 separate article.
-
----
-
-**Context:** Short-term administrative work for a public-sector unit, deidentified<br>
-**My work:** Used AI to map a legacy WordPress interface and built a repeatable publishing workflow with verification rules<br>
-**Evidence boundary:** Execution records and runbooks are verifiable; the unit, actual content, internal process, and private connection details remain unpublished

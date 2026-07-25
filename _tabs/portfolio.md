@@ -21,8 +21,8 @@ title: Portfolio
 </style>
 
 <div class="pf">
-  <input type="radio" name="pflang" id="pf-en" class="pf-r">
-  <input type="radio" name="pflang" id="pf-zh" class="pf-r" checked>
+  <input type="radio" name="pflang" id="pf-en" class="pf-r" checked>
+  <input type="radio" name="pflang" id="pf-zh" class="pf-r">
   <div class="pf-toggle"><label for="pf-zh">中文</label><label for="pf-en">EN</label></div>
   <div class="pf-item">
     <h3><span class="en">Current Thesis Research: Confidential Computing / TrustZone Virtualization</span><span class="zh">目前的論文研究：Confidential Computing / TrustZone Virtualization</span></h3>
@@ -98,7 +98,7 @@ title: Portfolio
       <p class="en">English one-line description.</p>
       <p class="zh">中文一行描述。</p>
     </div>
-  ▸ EN / 中文 由上方按鈕切換；預設中文。
+  ▸ EN / 中文 由上方按鈕切換；預設英文。
   ▸ 專案名稱不需翻譯時可直接寫 <h3>；需要翻譯時在標題內分別使用 .en / .zh。
   ▸ 想寫完整長文時，把描述換成連結：<a href="/projects/xxx/">Read more →</a>
     （單一 project 頁模板：projects/example-project.md）
