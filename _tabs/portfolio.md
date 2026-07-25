@@ -30,7 +30,7 @@ title: Portfolio
     <p class="zh">這項論文研究在 SSLab 探索如何透過 AVF，在 Google pKVM 上虛擬化 Arm TrustZone，目標是部署到實體 Android 裝置。</p>
   </div>
   <div class="pf-item">
-    <h3>Device Passthrough</h3>
+    <h3>pKVM X SMMU Device Passthrough</h3>
     <p class="en">The Device Passthrough prototype brings an emulated SMMUv3 into nested pKVM, routing DMA through the protected guest's Stage-2 and revoking those mappings before teardown. <a href="/projects/nested-pkvm-smmu-device-passthrough/">Read the case study →</a></p>
     <p class="zh">Device Passthrough prototype 把模擬 SMMUv3 帶進 nested pKVM，讓裝置 DMA 經過 protected guest 的 Stage-2，並在 teardown 前撤銷相關 mapping。<a href="/zh/projects/nested-pkvm-smmu-device-passthrough/">閱讀案例 →</a></p>
   </div>
