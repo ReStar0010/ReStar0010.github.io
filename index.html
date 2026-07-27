@@ -11,15 +11,8 @@ title: Writing
   .home-feed__toolbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: flex-end;
     margin: 0.25rem 0 1.5rem;
-  }
-
-  .home-feed__label {
-    margin: 0;
-    color: var(--text-muted-color);
-    font-size: 0.9rem;
   }
 
   .home-feed__toggle {
@@ -133,11 +126,6 @@ title: Writing
   }
 
   @media (max-width: 576px) {
-    .home-feed__toolbar {
-      align-items: flex-start;
-      flex-direction: column;
-    }
-
     .home-feed__card {
       padding: 1.1rem 1.15rem;
     }
@@ -156,11 +144,6 @@ title: Writing
 
 <div class="home-feed" data-home-feed data-language="en">
   <div class="home-feed__toolbar">
-    <p class="home-feed__label">
-      <span class="home-feed__en" lang="en">One story per project. Choose your reading language.</span>
-      <span class="home-feed__zh" lang="zh-TW">每個主題只顯示一次，請選擇閱讀語言。</span>
-    </p>
-
     <div class="home-feed__toggle" role="group" aria-label="Article language">
       <button type="button" data-language-button="en" aria-pressed="true">English</button>
       <button type="button" data-language-button="zh-TW" aria-pressed="false">中文</button>
