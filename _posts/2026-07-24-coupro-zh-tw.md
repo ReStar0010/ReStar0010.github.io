@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CouPro：讓校園市集走進真實場域"
+description: "我們做出雙邊校園優惠券市集，並和在地商家、學生跑了兩次場域實驗。結果顯示消費者動機偏弱、營運仍高度仰賴人工，核銷資料也不足以證明新增消費。"
 date: 2026-07-24 00:00:00 +0800
 permalink: /zh/projects/coupro/
 lang: zh-TW

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "在支援 SMMU 的 pKVM 上研究與實作裝置直通"
+description: "我們擴充 pKVM 由 EL2 掌控的 SMMUv3 路徑，讓指定裝置能使用受保護 guest 的 Stage-2，並在 nested QEMU 下分別測試安全性與完整作業系統路徑。"
 date: 2026-07-24 00:01:00 +0800
 permalink: /zh/projects/nested-pkvm-smmu-device-passthrough/
 lang: zh-TW

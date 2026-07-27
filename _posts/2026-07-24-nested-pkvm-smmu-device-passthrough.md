@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Device Passthrough Investigation & Implementation on SMMU-Supported pKVM"
+description: "We extended pKVM's EL2-owned SMMUv3 path so assigned devices could use a protected guest's Stage-2, then tested the security and full-OS paths separately under nested QEMU."
 date: 2026-07-24 00:01:00 +0800
 permalink: /projects/nested-pkvm-smmu-device-passthrough/
 lang: en

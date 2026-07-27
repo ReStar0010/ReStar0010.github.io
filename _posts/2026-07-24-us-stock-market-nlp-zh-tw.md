@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "從 342 份年報預測財務指標方向"
+title: "從年報預測企業成長與衰退：An Ensemble NLP Approach"
 description: "342 份 MD&A 能預測什麼？約 80% 的「非失敗率」又漏掉了什麼？我們比較多種文字模型，也把這項指標的限制說清楚。"
 date: 2026-07-24 01:02:30 +0800
 permalink: /zh/projects/us-stock-market-nlp/
