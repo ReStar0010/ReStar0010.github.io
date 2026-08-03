@@ -65,9 +65,9 @@ title: Portfolio
     <p class="zh">Lore 是一個經過 replay tests 的私人 LINE bot prototype，把訊息整理成可查詢的事實、定期摘要與提醒；真實群組驗證仍是下一步。<a href="/zh/projects/lore-group-memory/">閱讀專案紀錄 →</a></p>
   </div>
   <div class="pf-item">
-    <h3><span class="en">Legacy WordPress Operations</span><span class="zh">老 WordPress 行政流程自動化</span></h3>
-    <p class="en">This AI-assisted workflow connects a legacy WordPress site's REST API, browser-only forms, and FTP updates with round-trip checks. A roughly 90-minute first attempt became a repeatable process that runs in about three minutes per item. <a href="/en/projects/legacy-wordpress-ai-operations/">Read the project record →</a></p>
-    <p class="zh">這套 AI 輔助流程串起老 WordPress 的 REST API、瀏覽器表單與 FTP 更新，再用 round-trip 檢查結果。第一次約 90 分鐘的操作，後來縮成單筆約三分鐘、可重跑的流程。<a href="/projects/legacy-wordpress-ai-operations/">閱讀專案紀錄 →</a></p>
+    <h3><span class="en">From WordPress to Agentic AI</span><span class="zh">From WordPress to Agentic AI</span></h3>
+    <p class="en">I used Playwright CLI, checkpoints, and runbooks to hand a tedious legacy WordPress workflow to an AI Agent. Updating two pages went from more than half an hour of manual work to about three minutes. <a href="/en/projects/legacy-wordpress-ai-operations/">Read the project record →</a></p>
+    <p class="zh">我用 Playwright CLI、checkpoints 與 runbooks，把麻煩的老 WordPress 更新流程交給 AI Agent。原本手動更新兩個頁面要半小時以上，後來縮短到大約三分鐘。<a href="/projects/legacy-wordpress-ai-operations/">閱讀專案紀錄 →</a></p>
   </div>
   <div class="pf-item">
     <h3>FurnitureStyle</h3>
