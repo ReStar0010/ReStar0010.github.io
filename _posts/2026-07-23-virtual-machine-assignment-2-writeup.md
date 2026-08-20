@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "114-2 Virtual Machine Assignment 2 Writeup"
+title: "Booting a Realm VM far enough to trace early-console MMIO across the guest/host boundary"
 date: 2026-07-23 10:00:00 +0800
 permalink: /projects/114-2-vm-assignment-2-writeup/
 lang: en

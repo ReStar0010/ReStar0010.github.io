@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "114-2 虛擬機器作業二報告"
+title: "啟動 Realm VM，追蹤 early-console MMIO 如何跨越 guest／host 邊界"
 date: 2026-07-23 10:00:00 +0800
 permalink: /zh/projects/114-2-vm-assignment-2-writeup/
 lang: zh-TW
