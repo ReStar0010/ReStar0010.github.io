@@ -17,6 +17,8 @@ published: true
 >
 > 這一批專案文章是我用 AI 快速補寫的。內容都從既有報告、程式碼或筆記展開，發布前再逐篇對回原始資料。
 
+CouPro 獲得台大創創學程第 18 屆第三名。2026 年，我們也透過 [NTU AI Builders Challenge 矽谷創業種子甄選競賽](https://cep.ntu.edu.tw/ai-創業矽谷種子競賽/)取得赴矽谷交流的 offer。
+
 ```text
 實驗一 · 三週 · 151 位使用者 · 123 次實體核銷
 實驗二 · 一週 · 新增 88 位使用者 · 新增 113 次實體核銷
@@ -42,7 +44,7 @@ CouPro 起初是一個校園優惠券平台。打造它讓我學會如何把網�
 -> 商家看到可歸因的事件
 ```
 
-Web MVP 的前端使用 Next.js，後端使用 Django。它支援優惠券探索、QR code 領取、轉贈、店內核銷、商家管理和基本分析。優惠券不只是頁面上的內容；領取、轉贈、核銷工作階段、接收者和商家成果都會存成事件，供我們測試和檢查。
+Web MVP 的前端使用 Next.js，後端使用 Django。完整技術棧還包括 mobile 端的 React Native／Expo、提供 API 的 Django REST Framework、PostgreSQL 與 Redis，以及儲存媒體的 Cloudflare R2。測試與監測使用 pytest、Jest、Playwright、Maestro、Locust、Sentry、PostHog 和 Firebase Analytics。它支援優惠券探索、QR code 領取、轉贈、店內核銷、商家管理和基本分析。優惠券不只是頁面上的內容；領取、轉贈、核銷工作階段、接收者和商家成果都會存成事件，供我們測試和檢查。
 
 這個差異很重要。如果 CouPro 要承諾帶來新客，而不只是另一個優惠券目錄，我們不只要知道優惠券是否存在，還要知道它如何流動，以及最後在哪裡結束。
 

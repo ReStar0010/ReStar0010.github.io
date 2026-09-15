@@ -41,8 +41,8 @@ title: Portfolio
   </div>
   <div class="pf-item">
     <h3>CouPro</h3>
-    <p class="en">CouPro keeps unused campus coupons moving and turns every claim, share, and redemption into data merchants can track. Across two campus tests, the team's June 2026 pitch recorded 239 registered users and 236 physical redemptions. <a href="/projects/coupro/">Read the case study →</a></p>
-    <p class="zh">CouPro 讓用不到的校園優惠券繼續流通，也把每次領取、分享與核銷變成商家能追蹤的數據。團隊 2026 年 6 月的簡報記錄了兩次校園測試，共 239 名註冊使用者與 236 次實體核銷。<a href="/zh/projects/coupro/">閱讀案例 →</a></p>
+    <p class="en">As CTO and Product Lead, I built CouPro's redemption, sharing, and merchant analytics flows across Django, Next.js, and Expo. The team's June 2026 pitch recorded 239 registered users and 236 physical redemptions across two campus tests. CouPro placed third in NTU's Creativity and Entrepreneurship Program; we also received a Silicon Valley participation offer through the 2026 NTU AI Builders Challenge. <a href="/projects/coupro/">Read the case study →</a></p>
+    <p class="zh">我擔任 CTO 與產品負責人，以 Django、Next.js 和 Expo 建置 CouPro 的核銷、分享與商家分析流程。團隊 2026 年 6 月的簡報記錄了兩次校園測試，共 239 名註冊使用者與 236 次實體核銷。CouPro 獲台大創創學程第三名，我們也透過 2026 NTU AI Builders Challenge 取得赴矽谷交流的 offer。<a href="/zh/projects/coupro/">閱讀案例 →</a></p>
   </div>
   <div class="pf-item">
     <h3><span class="en">N-Day CVE-2025-59366 Reproduction</span><span class="zh">N-Day CVE-2025-59366 復現</span></h3>
