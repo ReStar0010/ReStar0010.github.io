@@ -312,4 +312,4 @@ cat /proc/<vCPU_thread_pid>/status | grep Cpus_allowed
 
 ---
 
-[下載原始 PDF](/files/114-2-vm-assignment-1-writeup.pdf)
+[下載原始 PDF](/files/arm-kvm-guest-controlled-vcpu-affinity.pdf)

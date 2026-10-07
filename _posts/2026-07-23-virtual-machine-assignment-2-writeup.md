@@ -376,4 +376,4 @@ The HPFAR register only reports the faulting address aligned to page size, so th
 
 ---
 
-[Download the original PDF](/files/114-2-vm-assignment-2-writeup.pdf)
+[Download the original PDF](/files/arm-cca-enabling-realm-vm-boot-and-early-console.pdf)

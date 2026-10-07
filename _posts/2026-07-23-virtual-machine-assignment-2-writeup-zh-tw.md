@@ -382,4 +382,4 @@ HPFAR register 只回報對齊 page size 的 faulting address，因此最低 12 
 
 ---
 
-[下載原始 PDF](/files/114-2-vm-assignment-2-writeup.pdf)
+[下載原始 PDF](/files/arm-cca-enabling-realm-vm-boot-and-early-console.pdf)
