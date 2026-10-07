@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "啟動 Realm VM，追蹤 early-console MMIO 如何跨越 guest／host 邊界"
+title: "Arm CCA — Enabling Realm VM Boot and Early Console"
 date: 2026-07-23 10:00:00 +0800
 permalink: /zh/projects/114-2-vm-assignment-2-writeup/
 lang: zh-TW

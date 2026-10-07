@@ -36,8 +36,8 @@ title: Portfolio
   </div>
   <div class="pf-item">
     <h3><span class="en">Virtual Machines</span><span class="zh">虛擬機器</span></h3>
-    <p class="en">This virtualization work <a href="/projects/114-2-vm-assignment-2-writeup/">boots a Realm VM far enough to trace early-console MMIO across the guest/host boundary</a>. A second experiment <a href="/projects/114-2-vm-assignment-1-writeup/">lets the guest control host vCPU affinity</a>.</p>
-    <p class="zh">這組虛擬化實作<a href="/zh/projects/114-2-vm-assignment-2-writeup/">啟動 Realm VM，追蹤 early-console MMIO 如何跨越 guest／host 邊界</a>；另一項實作則<a href="/zh/projects/114-2-vm-assignment-1-writeup/">讓 guest 控制 host vCPU affinity</a>。</p>
+    <p class="en"><a href="/projects/114-2-vm-assignment-1-writeup/">Arm KVM — Guest-controlled vCPU Affinity</a><br><a href="/projects/114-2-vm-assignment-2-writeup/">Arm CCA — Enabling Realm VM Boot and Early Console</a></p>
+    <p class="zh"><a href="/zh/projects/114-2-vm-assignment-1-writeup/">Arm KVM — Guest-controlled vCPU Affinity</a><br><a href="/zh/projects/114-2-vm-assignment-2-writeup/">Arm CCA — Enabling Realm VM Boot and Early Console</a></p>
   </div>
   <div class="pf-item">
     <h3>CouPro</h3>

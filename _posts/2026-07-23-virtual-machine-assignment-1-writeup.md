@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Letting the guest control host vCPU affinity"
+title: "Arm KVM — Guest-controlled vCPU Affinity"
 date: 2026-07-23 09:00:00 +0800
 permalink: /projects/114-2-vm-assignment-1-writeup/
 lang: en
