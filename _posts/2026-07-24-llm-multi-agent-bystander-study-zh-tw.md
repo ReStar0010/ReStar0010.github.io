@@ -73,4 +73,6 @@ published: true
 
 我的貢獻是實驗結構及相關研究設計。我協助把旁觀者效應的問題轉成不同群體規模的受控面板條件；實作、試驗執行、分析與寫作則不在我主張獨立完成的範圍內。
 
+[下載補充研究報告（PDF）](/files/llm-multi-agent-bystander-study-report.pdf)。
+
 [課程專案報告原文在這裡](/files/llm-multi-agent-bystander-study-project-report.md)。它保留了團隊繳交時的內容和原始解讀。本頁在已完成的試驗不足以支持報告中較廣泛的主張時，採用更窄的說法。人物設定檔和原始 `[THINK]` 推理紀錄未公開。

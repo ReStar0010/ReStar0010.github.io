@@ -108,6 +108,8 @@ helped turn the bystander-effect question into controlled panel conditions with
 different group sizes; the submitted report and completed runs came out of our
 collaboration.
 
+[Download the supplementary research report (PDF)](/files/llm-multi-agent-bystander-study-report.pdf).
+
 The original [course project report is available here](/files/llm-multi-agent-bystander-study-project-report.md).
 It is a snapshot of the submitted work, including the team's original
 interpretation. This page uses narrower language where the completed runs do
